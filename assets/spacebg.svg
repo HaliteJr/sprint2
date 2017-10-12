@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-2244 3251 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_20);
+      }
+
+      .cls-2 {
+        fill: #02041c;
+      }
+
+      .cls-3 {
+        fill: #ffeb00;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Web_1920_20">
+      <rect x="-2244" y="3251" width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_20" data-name="Web 1920 – 20" class="cls-1">
+    <rect class="cls-4" x="-2244" y="3251" width="1920" height="1080"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-2" width="1920" height="1080" transform="translate(-2244 3251)"/>
+    <g id="Group_22" data-name="Group 22" transform="translate(-2244 3251)">
+      <ellipse id="Ellipse_24" data-name="Ellipse 24" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(864.523 875.832)"/>
+      <ellipse id="Ellipse_25" data-name="Ellipse 25" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(116.758 805.783)"/>
+      <ellipse id="Ellipse_26" data-name="Ellipse 26" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1116.498 222.275)"/>
+      <ellipse id="Ellipse_27" data-name="Ellipse 27" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1735.121 217.895)"/>
+      <ellipse id="Ellipse_28" data-name="Ellipse 28" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(895.121 309.895)"/>
+      <ellipse id="Ellipse_29" data-name="Ellipse 29" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(112.356 406.846)"/>
+      <ellipse id="Ellipse_30" data-name="Ellipse 30" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1077.625 973.792)"/>
+      <ellipse id="Ellipse_31" data-name="Ellipse 31" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(283.86 854.743)"/>
+      <ellipse id="Ellipse_32" data-name="Ellipse 32" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1446.309 602.575)"/>
+      <ellipse id="Ellipse_33" data-name="Ellipse 33" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1079.309 789.575)"/>
+      <ellipse id="Ellipse_34" data-name="Ellipse 34" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(264.544 406.526)"/>
+      <ellipse id="Ellipse_35" data-name="Ellipse 35" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1653.133 442.842)"/>
+      <ellipse id="Ellipse_36" data-name="Ellipse 36" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(333.368 282.792)"/>
+      <ellipse id="Ellipse_37" data-name="Ellipse 37" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(650.368 953.792)"/>
+      <ellipse id="Ellipse_38" data-name="Ellipse 38" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1655.042 758.638)"/>
+      <ellipse id="Ellipse_39" data-name="Ellipse 39" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(593.277 640.589)"/>
+      <ellipse id="Ellipse_40" data-name="Ellipse 40" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1595.438 874.651)"/>
+      <ellipse id="Ellipse_41" data-name="Ellipse 41" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(396.674 705.602)"/>
+      <ellipse id="Ellipse_44" data-name="Ellipse 44" class="cls-3" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1013.674 555.602)"/>
+      <ellipse id="Ellipse_42" data-name="Ellipse 42" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1807.243 772.474)"/>
+      <ellipse id="Ellipse_43" data-name="Ellipse 43" class="cls-4" cx="2.129" cy="2.129" rx="2.129" ry="2.129" transform="translate(1099.478 326.425)"/>
+    </g>
+  </g>
+</svg>
