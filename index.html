@@ -3,13 +3,38 @@
 <head>
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #container {border: 1px solid black;}
+        H1 {
+            float: left;
+            color: white;
+        }
+
+        .mode{
+            background-color:black;
+            border: 1px solid #229;
+            border-radius: 10px;
+            height: 40px;
+            width: 100px;
+            float: right;
+            font-size: 1em;
+            color: white;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-
+<div id="container">
 <h1>Halite Jr</h1>
+<div class="mode" id="campaign">PILOT MISSIONS</div>
+<div class="mode" id="combat">COMBAT</div>
+<div class="mode" id="practice">PRACTICE FIELD</div>
+
 <p>This is a paragraph.</p>
 
 <script src="myscripts.js"></script>
-</body>
+</div></body>
 </html>
