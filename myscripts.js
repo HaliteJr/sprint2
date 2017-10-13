@@ -10,9 +10,6 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-
-
-
 function goingRedFirst(){
 	myleftMove(700);
 }
@@ -20,6 +17,113 @@ function goingRedFirst(){
 function goingBlueFirst(){
 	myRightAngleMove(300, 80, 350, 900, 1);
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function goingRedtoBlueFail(){
+    
+var elem = document.getElementById("mother_ship"); 
+var wingman = document.getElementById("baby_ship");
+
+
+    var leftPos = 80;
+    var wingman_leftPos = 60;
+    var wingman_topPos = 380;
+    var id = setInterval(frame, 10);
+
+    function frame() {
+        if (leftPos == 600) {
+            clearInterval(id);
+        } else {
+            leftPos++; 
+            wingman_topPos = wingman_topPos -0.2;
+            wingman_leftPos = 1.4 + wingman_leftPos;
+            wingman.style.left = wingman_leftPos + 'px';
+            elem.style.left = leftPos + 'px'; 
+            wingman.style.top = wingman_topPos + 'px';
+        }
+    }
+
+
+   setTimeout(function(){ 
+    wingman.style.backgroundImage = "url('assets/drill_2.png')";
+    }, 5900);
+
+
+   setTimeout(function(){ 
+    wingman.style.backgroundImage = "url('assets/wingman01_reverse.png')";
+    }, 7400);
+
+
+
+   setTimeout(function(){ 
+
+    var wingman_leftPos = 788;
+    var wingman_topPos = 276;
+
+    var id = setInterval(frame, 10);
+
+    function frame() {
+        if (wingman_leftPos == 680) {
+            clearInterval(id);
+        } else {
+            wingman_topPos = wingman_topPos + 1;
+            wingman_leftPos = wingman_leftPos - 1;
+
+            wingman.style.left = wingman_leftPos + 'px';
+            wingman.style.top = wingman_topPos + 'px';
+        }
+    }
+
+    }, 8000);
+
+    setTimeout(function(){ 
+        wingman.style.backgroundImage = "url('assets/wingman01.png')";
+        }, 8600);
+
+
+    setTimeout(function(){
+        var topPos = 300;
+        var leftPos = 600;
+
+        var wingman_leftPos = 680;
+        var wingman_topPos = 384;
+
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 900) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos + 0.7;
+
+                wingman_leftPos = wingman_leftPos + 1.1;
+                wingman_topPos = wingman_topPos + 0.7;
+
+                elem.style.top = topPos+ 'px'; 
+                elem.style.left = leftPos + 'px'; 
+                
+                wingman.style.top = wingman_topPos + 'px';
+                wingman.style.left = wingman_leftPos + 'px';
+            }
+        }
+    }, 9000);
+
+
+
+    setTimeout(function(){ 
+    wingman.style.backgroundImage = "url('assets/drill_2.png')";
+    }, 13000);
+
+
+   setTimeout(function(){ 
+    wingman.style.backgroundImage = "url('assets/wingman01.png')";
+    }, 14500);
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 function goingRedtoBlue(){
