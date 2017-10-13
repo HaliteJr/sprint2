@@ -57,6 +57,7 @@ var wingman = document.getElementById("baby_ship");
 
    setTimeout(function(){ 
     wingman.style.backgroundImage = "url('assets/wingman01_shield_drill.png')";
+    updateLife(5);
     }, 5900);
 
 
@@ -128,11 +129,12 @@ var wingman = document.getElementById("baby_ship");
 
    setTimeout(function(){ 
     wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
+    ending();
     }, 14500);
+
 
 }
 
-goingRedtoBlueFail();
 
 
 function goingRedtoBlue(){
@@ -425,7 +427,11 @@ return i;
 
 function rere(){
     closeNav();
-    goingRedtoBlue();
+    if (shieldChosen) {
+        goingRedtoBlueFail();
+    } else {
+        goingRedtoBlue();
+    }
 }
 
 
