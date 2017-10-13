@@ -6,68 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        #container {border: 1px solid black;}
-        H1 {
-            float: left;
-            color: white;
-            margin-top: 5vh;
-            margin-left: 5vw;
-        }
 
-        /*#modes {*/
-            /*margin-top: 5vh;*/
-        /*}*/
-
-        /*#campaign {*/
-            /*margin-top: 5vh;*/
-            /*margin-right:2vw;*/
-        /*}*/
-
-        /*#combat {*/
-            /*margin-top: 5vh;*/
-            /*margin-right:2vw;*/
-        /*}*/
-
-        #practice {
-            margin-right:5vw;
-        }
-
-        .mode {
-            background-color:black;
-            border: 1px solid #229;
-            border-radius: 10px;
-            height: 40px;
-            width: 100px;
-            float: right;
-            font-size: 1em;
-            color: white;
-            text-align: center;
-            margin-top: 5vh;
-            margin-right: 2vh;
-        }
-
-        #status {float: left;}
-
-        #planets {
-            float: right;
-            margin-top: 20vh;
-            margin-left: 100vh;
-        }
-
-        #lava1 {
-            margin-top: 15vh;
-            margin-left: 5vh;
-        }
-
-        #moon {
-            margin-top: 35vh;
-            margin-left: 10vh;
-        }
-
-        #lava2 {
-            margin-top: 15vh;
-            margin-left: 10vh;
-        }
 
     </style>
 </head>
@@ -103,4 +42,47 @@
 
 <script src="myscripts.js"></script>
 </div></body>
+
+</head>
+<body>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
+	<div class = "open_nav_bar" onclick="openNav()"></div>
+
+
+	<div id="container">
+	<h1>Halite Jr</h1>
+	<div class="mode" id="campaign">PILOT MISSIONS</div>
+	<div class="mode" id="combat">COMBAT</div>
+	<div class="mode" id="practice">PRACTICE FIELD</div>
+	<div id="status">
+	    <img src="assets/heart.png" alt="Life">
+	    <img src="assets/engine.png" alt="Engine">
+	    <img src="assets/time.png" alt="Time">
+	</div>
+	<div id="board">
+	    <div id="ship">
+	        <img src="assets/ship01.png" class = "test" alt="Ship">
+	    </div>
+	</div>
+
+
+
+	<script src="myscripts.js">
+
+	setInterval(function() {
+      $(".test").effect( "bounce", 
+          {times:4}, 2500 );
+     },2000);
+
+	</script>
+	</div>
+</body>
+>>>>>>> 323877ec8db9f23786e6af0d2500ede1ca4727f8
 </html>
