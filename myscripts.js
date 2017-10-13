@@ -158,6 +158,8 @@ function chooseUpgrade() {
     $("#upgrade-box").hide();
     if (shieldChosen) {
         document.getElementById('upgrade-icon').innerHTML = '<img src="assets/upgrade_shield_selected.png" style="margin-left:20px;padding-right: 10px;float:left;height: 25px">'
+        document.getElementById('ship').innerHTML = '<img src="assets/ship01-sheild.png" onclick="myMove()" id = "mother_ship" class = "ball" alt="Ship">'
+        document.getElementById('wingman').innerHTML = '<img src="assets/wingman01-sheild.png" id = "baby_ship" class = "ball1" alt="Wingman">'
     }
     else if (drillChosen) {
         document.getElementById('upgrade-icon').innerHTML = '<img src="assets/upgrade_drill_selected.png" style="margin-left:20px;padding-right: 10px;float:left;height: 25px">'
