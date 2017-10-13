@@ -26,7 +26,6 @@ setTimeout(goingRedtoBlue(), 10);
 
 
 
-
 function goingRedtoBlue(){
 	var elem = document.getElementById("mother_ship"); 
     var topPos = 300;
@@ -43,9 +42,6 @@ function goingRedtoBlue(){
         }
     }
 }
-
-
-
 
 
 function myRightAngleMove() {
@@ -79,3 +75,22 @@ function myleftMove(leftPosValue) {
     }
 }
 
+
+    const start = new Date();
+    const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
+
+    function startTime() {
+    var today = new Date();
+    var currsec = today.getHours()*3600+today.getMinutes()*60+today.getSeconds();
+    var m = Math.floor((currsec-startsec)/60);
+    var s = (currsec-startsec)%60;
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('timer').innerHTML =
+    m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+    }

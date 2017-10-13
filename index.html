@@ -4,26 +4,7 @@
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
-    <style></style>
-    <script>
-    function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('timer').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-    }
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body background="assets/spacebg.png" onload="startTime()">
@@ -69,15 +50,15 @@
                 <div class="text" id="timer" style="float:left"></div>
             </div>
             <div id="yellow-gem">
-                <img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:60px;float:left;location:fixed">
-                <div class="text" style="float:left">x5</div>
+                <img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:40px;float:left;">
+                <div class="text" style="float:left;">x5</div>
             </div>
             <div id="purple-gem">
-                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:60px;float:left">
+                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:40px;float:left">
                 <div class="text" style="float:left">x0</div>
             </div>
-            <div class="text" id="points" style="margin-left:160px;float:left">MISSION</div>
-            <div class="text" id="mission" style="margin-left:50px;float:left">SCORES</div>
+            <div class="text" id="points" style="margin-left:160px;float:left">SCORES:000000</div>
+            <div class="text" id="mission" style="margin-left:50px;float:left">MISSION 001</div>
         </div>
 
         <div id="ships">
@@ -98,14 +79,7 @@
         </div>
         <script src="myscripts.js"></script>
 
-	<script src="myscripts.js">
-
-	setInterval(function() {
-      $(".test").effect( "bounce", 
-          {times:4}, 2500 );
-     },2000);
-
-	</script>
+	<script src="myscripts.js"></script>
 	</div>
 </body>
 </html>
