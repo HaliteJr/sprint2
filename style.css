@@ -33,7 +33,7 @@ body {
     vertical-align: -20px;
 }
 
-#choose-upgrade:hover{
+#upgrade-ok:hover{
     cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 #upgrade-ok {
-    background-color: green;
+    background-color: #00A651;
     height: 30px;
     margin-left: 250px;
     margin-right:250px;
@@ -78,6 +78,10 @@ body {
     border-radius:20px;
     color: white;
     text-align: center;
+}
+
+#upgrade-ok-span {
+    vertical-align: -5px;
 }
 
 .menu_options{
