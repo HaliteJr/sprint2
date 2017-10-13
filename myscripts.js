@@ -1,122 +1,55 @@
-
-/* Open the sidenav */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-}
-
-/* Close/hide the sidenav */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-
-
-function goingRedFirst(){
-	myleftMove(700);
-}
-
-function goingBlueFirst(){
-	myRightAngleMove(300, 80, 350, 900, 1);
-}
-
-
-function goingRedtoBlue(){
-	
-var elem = document.getElementById("mother_ship"); 
-
-    var leftPos = 80;
-    var id = setInterval(frame, 10);
-
-    function frame() {
-        if (leftPos == 700) {
-            clearInterval(id);
-        } else {
-            leftPos++; 
-            elem.style.left = leftPos + 'px'; 
-        }
-    }
-
-    setTimeout(function(){
-        var topPos = 300;
-        var leftPos = 700;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (leftPos == 900) {
-                clearInterval(id);
-            } else {
-                leftPos++; 
-                topPos = topPos + 1.4;
-                elem.style.top = topPos+ 'px'; 
-                elem.style.left = leftPos + 'px'; 
-            }
-        }
-    }, 6200);
-
-
-    setTimeout(function(){
-        var topPos = 580;
-        var leftPos = 900;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (leftPos == 1100) {
-                clearInterval(id);
-            } else {
-                leftPos++; 
-                topPos = topPos - 1;
-                elem.style.top = topPos + 'px'; 
-                elem.style.left = leftPos + 'px'; 
-            }
-        }    
-
-    }, 8200);
-
-
-}
-
-
-
-function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue, value) {
-    var elem = document.getElementById("mother_ship"); 
-    var topPos = topPos;
-    var leftPos = leftPos;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (leftPos == intendedLeftPos) {
-            clearInterval(id);
-        } else {
-            leftPos++; 
-            topPos = topPos + value;
-            elem.style.top = topPos+ 'px'; 
-            elem.style.left = leftPos + 'px'; 
-        }
-    }
-}
-
-function myleftMove(leftPosValue, nextMove) {
-    var elem = document.getElementById("mother_ship"); 
-    var leftPos = 80;
-    var id = setInterval(frame, 10);
-
-    function frame() {
-        if (leftPos == leftPosValue) {
-            clearInterval(id);
-            callback();
-        } else {
-            leftPos++; 
-            elem.style.left = leftPos + 'px'; 
-        }
-    }
-    
-}
-
-
-goingRedtoBlue();
-
-
-
-
 const start = new Date();
 const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
+
+function rere(){ window.location.reload();}
+
+function addImg() {
+    document.getElementById("button1").innerHTML = "<img src=assets/if_heart02.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();}
+
+function addImg1() {
+    document.getElementById("button1").innerHTML = "<img src=assets/if_shield02.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();}
+
+function addImg2() {
+    document.getElementById("button1").innerHTML = "<img src=assets/if_gem02.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();}
+
+function addImg3() {
+    document.getElementById("button2").innerHTML = "<img src=assets/planet-moon.png style='margin-left:20px;margin-top:-15px;height:100px'>";
+    $(".popup1").hide();}
+
+
+
+
+$(".link").click(function(e){
+    e.preventDefault();
+    $(".popup").fadeIn(300,function(){$(this).focus();});
+});
+
+$('.close').click(function() {
+    $(".popup").fadeOut(300);
+});
+$(".popup").on('blur',function(){
+    $(this).fadeOut(300);
+});
+
+$(".link1").click(function(e){
+    e.preventDefault();
+    $(".popup1").fadeIn(300,function(){$(this).focus();});
+});
+
+$('.close1').click(function() {
+    $(".popup1").fadeOut(300);
+});
+$(".popup1").on('blur',function(){
+    $(this).fadeOut(300);
+});
+
+
+
+
+
 
 var score = 0;
 var life = 12;
@@ -166,47 +99,146 @@ return i;
 
 
 
-function rere(){ window.location.reload();}
 
-function addImg() {
-    document.getElementById("button1").innerHTML = "<img src=assets/if_heart02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
 
-function addImg1() {
-    document.getElementById("button1").innerHTML = "<img src=assets/if_shield02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
 
-function addImg2() {
-    document.getElementById("button1").innerHTML = "<img src=assets/if_gem02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
+/* Open the sidenav */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
 
-function addImg3() {
-    document.getElementById("button2").innerHTML = "<img src=assets/planet-moon.png style='margin-left:20px;margin-top:-15px;height:100px'>";
-    $(".popup1").hide();}
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 
 
 
-$(".link").click(function(e){
-    e.preventDefault();
-    $(".popup").fadeIn(300,function(){$(this).focus();});
-});
+function goingRedFirst(){
+	myleftMove(700);
+}
 
-$('.close').click(function() {
-    $(".popup").fadeOut(300);
-});
-$(".popup").on('blur',function(){
-    $(this).fadeOut(300);
-});
+function goingBlueFirst(){
+	myRightAngleMove(300, 80, 350, 900, 1);
+}
 
-$(".link1").click(function(e){
-    e.preventDefault();
-    $(".popup1").fadeIn(300,function(){$(this).focus();});
-});
 
-$('.close1').click(function() {
-    $(".popup1").fadeOut(300);
-});
-$(".popup1").on('blur',function(){
-    $(this).fadeOut(300);
-});
+function goingRedtoBlue(){
+	
+var elem = document.getElementById("mother_ship"); 
+var wingman = document.getElementById("baby_ship");
+
+    var leftPos = 80;
+    var wingman_leftPos = 60;
+
+    var id = setInterval(frame, 10);
+
+    function frame() {
+        if (leftPos == 700) {
+            clearInterval(id);
+        } else {
+            leftPos++; 
+            wingman_leftPos++;
+            wingman.style.left = wingman_leftPos + 'px';
+            elem.style.left = leftPos + 'px'; 
+        }
+    }
+
+    setTimeout(function(){
+        var topPos = 300;
+        var leftPos = 700;
+
+        var wingman_leftPos = 680;
+        var wingman_topPos = 380;
+
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 900) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos + 1.4;
+
+                wingman_leftPos++;
+                wingman_topPos = wingman_topPos + 1.4;
+
+                elem.style.top = topPos+ 'px'; 
+                elem.style.left = leftPos + 'px'; 
+                
+                wingman.style.top = wingman_topPos + 'px';
+                wingman.style.left = wingman_leftPos + 'px';
+            }
+        }
+    }, 6200);
+
+
+    setTimeout(function(){
+        var topPos = 580;
+        var leftPos = 900;
+
+        var wingman_topPos = 660;
+        var wingman_leftPos = 880;
+
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 1100) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos - 1;
+
+                wingman_leftPos++;
+                wingman_topPos = wingman_topPos - 1;
+
+                elem.style.top = topPos + 'px'; 
+                elem.style.left = leftPos + 'px'; 
+
+                wingman.style.top = wingman_topPos + 'px';
+                wingman.style.left = wingman_leftPos + 'px';
+            }
+        }    
+
+    }, 8200);
+
+
+}
+
+
+
+function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue, value) {
+    var elem = document.getElementById("mother_ship"); 
+    var topPos = topPos;
+    var leftPos = leftPos;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (leftPos == intendedLeftPos) {
+            clearInterval(id);
+        } else {
+            leftPos++; 
+            topPos = topPos + value;
+            elem.style.top = topPos+ 'px'; 
+            elem.style.left = leftPos + 'px'; 
+        }
+    }
+}
+
+function myleftMove(leftPosValue, nextMove) {
+    var elem = document.getElementById("mother_ship"); 
+    var leftPos = 80;
+    var id = setInterval(frame, 10);
+
+    function frame() {
+        if (leftPos == leftPosValue) {
+            clearInterval(id);
+            callback();
+        } else {
+            leftPos++; 
+            elem.style.left = leftPos + 'px'; 
+        }
+    }
+    
+}
+
+
+goingRedtoBlue();
