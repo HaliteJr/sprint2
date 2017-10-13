@@ -8,7 +8,7 @@ body {
 
 #upgrade-box {
     background-color: white;
-    margin-left: 400px;
+    margin-left: 350px;
     height: 600px;
     width: 700px;
     position:absolute;
@@ -27,10 +27,18 @@ body {
     font-size: 2em;
 }
 
+#choose-upgrade:hover{
+    cursor: pointer;
+}
+
 .upgrade {
     height: 200px;
     width: 200px;
     margin-top: 40px;
+}
+
+.upgrade:hover{
+    cursor: pointer;
 }
 
 #shield {
@@ -38,6 +46,14 @@ body {
 }
 
 #drill {
+    margin-right: 100px;
+}
+
+#shield-select {
+    margin-left: 100px;
+}
+
+#drill-select {
     margin-right: 100px;
 }
 

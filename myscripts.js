@@ -115,19 +115,44 @@ goingRedtoBlue();
 
 
 
-const start = new Date();
-const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
+var start = new Date();
+var startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
 
 var score = 0;
 var life = 12;
 var energy = 12;
 
-function upgradeShield() {
+var shieldChosen = false;
+var drillChosen = false;
+
+function chooseUpgrade() {
     $("#upgrade-box").hide();
 }
 
+function upgradeShield() {
+    if (drillChosen) {
+        upgradeDrill();
+    }
+    if (!shieldChosen) {
+        document.getElementById('shield-box').innerHTML = '<img id="shield-select" class="upgrade" src="assets/upgrade_shield_selected.png" onclick="upgradeShield()">';
+        shieldChosen = true;
+    } else {
+        document.getElementById('shield-box').innerHTML = '<img id="shield" class="upgrade" src="assets/upgrade_shield.png" onclick="upgradeShield()">';
+        shieldChosen = false;
+    }
+}
+
 function upgradeDrill() {
-    $("#upgrade-box").hide();
+    if (shieldChosen) {
+        upgradeShield();
+    }
+    if (!drillChosen) {
+        document.getElementById('drill-box').innerHTML = '<img id="drill-select" class="upgrade" src="assets/upgrade_drill_selected.png" onclick="upgradeDrill()">';
+        drillChosen = true;
+    } else {
+        document.getElementById('drill-box').innerHTML = '<img id="drill" class="upgrade" src="assets/upgrade_drill.png" onclick="upgradeDrill()">';
+        drillChosen = false;
+    }
 }
 
 function getScore() {

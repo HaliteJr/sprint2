@@ -84,9 +84,6 @@
                 <div class="text" style="float:left">x 0</div>
             </div>
 
-            <!--<div class="text" id="points" style="margin-right:50px;float:right">MISSION 005</div>-->
-            <!-- <div class="text" id="mission" style="margin-right:50px;float:right">SCORES: 000000</div> -->
-
             <div class="text" id="mission" style="margin-right:50px;float:right">MISSION 005</div>
             <div class="text" id="points" style="margin-right:50px;float:right"></div>
 
@@ -108,34 +105,15 @@
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
             <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px" onclick="updateLife(2)">
         </div>
-        <script src="myscripts.js"></script>
+    <script src="myscripts.js"></script>
 
-	<script src="myscripts.js">
-		  //  const start = new Date();
-    // const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
-
-    // function startTime() {
-    // var today = new Date();
-    // var currsec = today.getHours()*3600+today.getMinutes()*60+today.getSeconds();
-    // var m = Math.floor((currsec-startsec)/60);
-    // var s = (currsec-startsec)%60;
-    // m = checkTime(m);
-    // s = checkTime(s);
-    // document.getElementById('timer').innerHTML =
-    // m + ":" + s;
-    // var t = setTimeout(startTime, 500);
-    // }
-    // function checkTime(i) {
-    // if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    // return i;
-    // }
-	</script>
+	<script src="myscripts.js"></script>
 	</div>
 
     <div id="upgrade-box">
-        <div id="choose-upgrade">Choose Upgrade</div>
-        <div style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
-        <div style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
+        <div id="choose-upgrade" onclick="chooseUpgrade()">Choose Upgrade</div>
+        <div id="shield-box" style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
+        <div id="drill-box" style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
         <div id="upgrade-name" style="height:90px;width:700px; margin-top:250px">
             <div style="float:left; margin-top:30px; margin-left:100px; width:200px; text-align:center">"Tungsten Coating" Shield</div>
             <div style="float:right; margin-top:30px; margin-right:100px; width:200px; text-align:center">"Life Mining" Drill</div>
