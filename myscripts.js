@@ -156,6 +156,12 @@ var drillChosen = false;
 
 function chooseUpgrade() {
     $("#upgrade-box").hide();
+    if (shieldChosen) {
+        document.getElementById('upgrade-icon').innerHTML = '<img src="assets/upgrade_shield_selected.png" style="margin-left:20px;padding-right: 10px;float:left;height: 25px">'
+    }
+    else if (drillChosen) {
+        document.getElementById('upgrade-icon').innerHTML = '<img src="assets/upgrade_drill_selected.png" style="margin-left:20px;padding-right: 10px;float:left;height: 25px">'
+    }
 }
 
 function upgradeShield() {
@@ -183,6 +189,7 @@ function upgradeDrill() {
         drillChosen = false;
     }
 }
+
 
 function getScore() {
     var scoreString = score.toString();
