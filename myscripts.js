@@ -56,12 +56,12 @@ var wingman = document.getElementById("baby_ship");
 
 
    setTimeout(function(){ 
-    wingman.style.backgroundImage = "url('assets/drill_2.png')";
+    wingman.style.backgroundImage = "url('assets/wingman01_shield_drill.png')";
     }, 5900);
 
 
    setTimeout(function(){ 
-    wingman.style.backgroundImage = "url('assets/wingman01_reverse.png')";
+    wingman.style.backgroundImage = "url('assets/wingman01-sheild-reverse.png')";
     }, 7400);
 
 
@@ -88,7 +88,7 @@ var wingman = document.getElementById("baby_ship");
     }, 8000);
 
     setTimeout(function(){ 
-        wingman.style.backgroundImage = "url('assets/wingman01.png')";
+        wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
         }, 8600);
 
 
@@ -122,17 +122,17 @@ var wingman = document.getElementById("baby_ship");
 
 
     setTimeout(function(){ 
-    wingman.style.backgroundImage = "url('assets/drill_2.png')";
+    wingman.style.backgroundImage = "url('assets/wingman01_shield_drill.png')";
     }, 13000);
 
 
    setTimeout(function(){ 
-    wingman.style.backgroundImage = "url('assets/wingman01.png')";
+    wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
     }, 14500);
 
 }
 
-
+goingRedtoBlueFail();
 
 
 function goingRedtoBlue(){
