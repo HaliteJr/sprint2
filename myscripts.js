@@ -16,18 +16,50 @@ function goingRedFirst(){
 }
 
 function goingBlueFirst(){
-	myRightAngleMove(300, 80, 350, 900);
+	myRightAngleMove(300, 80, 350, 900, 1);
 }
 
 
 function goingRedtoBlue(){
-	myleftMove(700);
-    myRightAngleMove();
+	
+    var elem = document.getElementById("mother_ship"); 
+    
+    
+        var leftPos = 80;
+        var id = setInterval(frame, 10);
+
+        function frame() {
+            if (leftPos == 700) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                elem.style.left = leftPos + 'px'; 
+            }
+        }
+
+
+
+setTimeout(function(){
+    var topPos = 300;
+    var leftPos = 700;
+    var id = setInterval(frame, 10);
+    function frame() {
+        if (leftPos == 900) {
+            clearInterval(id);
+        } else {
+            leftPos++; 
+            topPos = topPos + 1.4;
+            elem.style.top = topPos+ 'px'; 
+            elem.style.left = leftPos + 'px'; 
+        }
+    }
+    }, 6200);
+
 }
 
 
 
-function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue) {
+function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue, value) {
     var elem = document.getElementById("mother_ship"); 
     var topPos = topPos;
     var leftPos = leftPos;
@@ -37,49 +69,29 @@ function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue) {
             clearInterval(id);
         } else {
             leftPos++; 
-            topPos++;
+            topPos = topPos + value;
             elem.style.top = topPos+ 'px'; 
             elem.style.left = leftPos + 'px'; 
         }
     }
-    myleftMove(myleftMoveValue);
 }
 
-function myleftMove(leftPosValue) {
+function myleftMove(leftPosValue, nextMove) {
     var elem = document.getElementById("mother_ship"); 
     var leftPos = 80;
     var id = setInterval(frame, 10);
+
     function frame() {
         if (leftPos == leftPosValue) {
             clearInterval(id);
+            callback();
         } else {
             leftPos++; 
             elem.style.left = leftPos + 'px'; 
         }
     }
+    
 }
 
 
-
-
-goingBlueFirst()
-
-
-    const start = new Date();
-    const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
-
-    function startTime() {
-    var today = new Date();
-    var currsec = today.getHours()*3600+today.getMinutes()*60+today.getSeconds();
-    var m = Math.floor((currsec-startsec)/60);
-    var s = (currsec-startsec)%60;
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('timer').innerHTML =
-    m + ":" + s;
-    var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-    }
+goingRedtoBlue();
