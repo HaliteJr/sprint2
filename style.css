@@ -25,7 +25,7 @@ body {
 H1 {
     float: left;
     color: white;
-    margin-top: 5vh;
+    margin-top: 4.2vh;
     margin-left: 5vw;
 }
 
@@ -41,7 +41,7 @@ H1:hover{
     font-size: 1em;
     color: white;
     text-align: center;
-    margin-top: 6vh;
+    margin-top: 6.5vh;
 }
 
 .mode:hover{
@@ -53,7 +53,7 @@ H1:hover{
 }
 
 #status {
-    margin-top: 15vh;
+    margin-top: 3.2vh;
     height: 10vh;
 }
 
