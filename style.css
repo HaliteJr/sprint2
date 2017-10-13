@@ -6,6 +6,40 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#upgrade-box {
+    background-color: white;
+    margin-left: 400px;
+    height: 600px;
+    width: 700px;
+    position:absolute;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#choose-upgrade {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 2em;
+}
+
+.upgrade {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+#shield {
+    margin-left: 100px;
+}
+
+#drill {
+    margin-right: 100px;
+}
 
 .menu_options{
     border: 2px solid #a1a1a1;

@@ -15,6 +15,14 @@
     var life = 12;
     var energy = 12;
 
+    function upgradeShield() {
+        $("#upgrade-box").hide();
+    }
+
+    function upgradeDrill() {
+        $("#upgrade-box").hide();
+    }
+
     function getScore() {
         var scoreString = score.toString();
         document.getElementById('points').innerHTML = "SCORES : "+ "0".repeat(6 - scoreString.length) + scoreString;
@@ -203,5 +211,17 @@
 
 	</script>
 	</div>
+
+    <div id="upgrade-box">
+        <div id="choose-upgrade">Choose Upgrade</div>
+        <div style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
+        <div style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
+        <div id="upgrade-name" style="height:90px;width:700px; margin-top:250px">
+            <div style="float:left; margin-top:30px; margin-left:100px; width:200px; text-align:center">"Tungsten Coating" Shield</div>
+            <div style="float:right; margin-top:30px; margin-right:100px; width:200px; text-align:center">"Life Mining" Drill</div>
+        </div>
+        <div id="shield-effect" style="float:left; margin-top:5px; margin-left:100px; width:190px; text-align:center">Get 15 seconds of invincibility when drilling damagable planet</div>
+        <div id="drill-effect" style="float:right; margin-top:5px; margin-right:100px; width:190px; text-align:center">Get 4 more life after each mining using this drill upgrade</div>
+    </div>
 </body>
 </html>
