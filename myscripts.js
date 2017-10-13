@@ -193,21 +193,58 @@ return i;
 
 function rere(){ window.location.reload();}
 
+
+
 function addImg() {
     document.getElementById("button1").innerHTML = "<img src=assets/if_heart02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_heart01.png style='height:60px;margin-left:-10px'>";
+    }
 
 function addImg1() {
     document.getElementById("button1").innerHTML = "<img src=assets/if_shield02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_shield01.png style='height:60px;margin-left:-10px'>";}
 
 function addImg2() {
     document.getElementById("button1").innerHTML = "<img src=assets/if_gem02.png style='height:60px;margin-left:-10px'>";
-    $(".popup").hide();}
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_gem01.png style='height:60px;margin-left:-10px'>";}
 
 function addImg3() {
     document.getElementById("button2").innerHTML = "<img src=assets/planet-moon.png style='margin-left:20px;margin-top:-15px;height:100px'>";
+    $(".popup1").hide();
+}
+
+function addImg4() {
+    document.getElementById("button2").innerHTML = "<img src=assets/planet-lava.png style='margin-left:20px;margin-top:-15px;height:100px'>";
     $(".popup1").hide();}
+
+function addImg8() {
+    document.getElementById("button4").innerHTML = "<img src=assets/planet-moon.png style='margin-left:20px;margin-top:-15px;height:100px'>";
+    $(".popup2").hide();
+}
+
+function addImg9() {
+    document.getElementById("button4").innerHTML = "<img src=assets/planet-lava.png style='margin-left:20px;margin-top:-15px;height:100px'>";
+    $(".popup2").hide();}
+
+function addImg5(){
+    document.getElementById("button1").innerHTML = "<img src=assets/if_heart01.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_heart02.png style='height:60px;margin-left:-10px'>";
+}
+
+function addImg7() {
+    document.getElementById("button1").innerHTML = "<img src=assets/if_gem01.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_gem02.png style='height:60px;margin-left:-10px'>";}
+
+
+function addImg6() {
+    document.getElementById("button1").innerHTML = "<img src=assets/if_shield01.png style='height:60px;margin-left:-10px'>";
+    $(".popup").hide();
+    document.getElementById("button3").innerHTML = "<img src=assets/if_shield02.png style='height:60px;margin-left:-10px'>";}
 
 
 
@@ -233,5 +270,17 @@ $('.close1').click(function() {
     $(".popup1").fadeOut(300);
 });
 $(".popup1").on('blur',function(){
+    $(this).fadeOut(300);
+});
+
+$(".link2").click(function(e){
+    e.preventDefault();
+    $(".popup2").fadeIn(300,function(){$(this).focus();});
+});
+
+$('.close2').click(function() {
+    $(".popup2").fadeOut(300);
+});
+$(".popup2").on('blur',function(){
     $(this).fadeOut(300);
 });

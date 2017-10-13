@@ -6,6 +6,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
 #upgrade-box {
     background-color: #E6E7E8;
     margin-left: 400px;
@@ -87,6 +90,16 @@ body {
 }
 
 .popup1{
+    width: 400px;
+    height: 300px;
+
+    display: none;
+    position: absolute;
+    outline:0;
+    background-color: rgba(65, 64, 66, 0.7);
+}
+
+.popup2{
     width: 400px;
     height: 300px;
 
