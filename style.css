@@ -20,7 +20,7 @@ body {
     display: flex;
 }
 
-#container {border: 1px solid black;}
+#container {border: 1px solid transparent;}
 
 H1 {
     float: left;
@@ -176,5 +176,4 @@ H1 {
     to {
         transform: translateY(-18px);
     }
-}
 }
