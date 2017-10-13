@@ -34,10 +34,23 @@
 
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">About</a>
+	  <div id = "nav_options_all">
+	  	<div class = "dividing_line"></div>
+		  <div class = "options_group">
+			  <div href="#" class = "menu_options" ></div>
+			  <div href="#" class = "menu_options" ></div>
+			  <div href="#" class = "menu_options" ></div>
+		  </div>
+		  <div class = "options_group">
+			  <div href="#" class = "menu_options" ></div>
+			  <div href="#" class = "menu_options" ></div>
+			  <div href="#" class = "menu_options" ></div>
+		  </div>
+	  </div>
+<!-- 	  <a href="#">About</a>
 	  <a href="#">Services</a>
 	  <a href="#">Clients</a>
-	  <a href="#">Contact</a>
+	  <a href="#">Contact</a> -->
 	</div>
 	<div class = "open_nav_bar" onclick="openNav()"></div>
 
@@ -72,12 +85,15 @@
 
         <div id="ships">
             <div id="ship">
-                <img src="assets/ship01.png" class = "ball" alt="Ship">
+                <img src="assets/ship01.png" onclick="myMove()" id = "mother_ship" class = "ball" alt="Ship">
             </div>
             <div id="wingman">
                 <img src="assets/wingman01.png" class = "ball1" alt="Wingman">
             </div>
         </div>
+
+	<script src="myscripts.js"></script>
+
         <div id="planets">
             <img id="lava1" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:20px; margin-bottom:340px">
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
