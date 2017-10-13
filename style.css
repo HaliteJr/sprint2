@@ -30,17 +30,18 @@ H1 {
 }
 
 .mode{
-    background-color:black;
-    border: 1px solid #229;
-    border-radius: 10px;
+
     height: 40px;
-    width: 100px;
+    width: 160px;
     float: right;
     font-size: 1em;
     color: white;
     text-align: center;
-    margin-top: 5vh;
-    margin-right: 2vh;
+    margin-top: 6vh;
+}
+
+#campaign {
+    color: #FF6C00;
 }
 
 #status {
@@ -63,11 +64,12 @@ H1 {
 
 /* The side navigation menu */
 .open_nav_bar{
-	width: 60px;
-	height: 60px;
-	background-color: white;
+	width: 89px;
+	height: 50px;
+	/*background-color: white;*/
 	position: absolute;
-	margin-top: 30%;
+    bottom: 5vh;
+	/*margin-top: 30%;*/
 }
 .sidenav {
     height: 100%; /* 100% Full-height */
