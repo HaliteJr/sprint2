@@ -109,7 +109,7 @@
 	</div>
 
     <div id="upgrade-box">
-        <div id="choose-upgrade" onclick="chooseUpgrade()"><span id="upgrade-span">Choose Upgrade</span></div>
+        <div id="choose-upgrade"><span id="upgrade-span">Choose Upgrade</span></div>
         <div id="shield-box" style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
         <div id="drill-box" style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
         <div id="upgrade-name" style="height:50px;width:580px; margin-top:250px">
@@ -118,7 +118,7 @@
         </div>
         <div id="shield-effect" class="effect" style="float:left; margin-top:5px; margin-left:80px; width:190px; text-align:center">Get 10 seconds of reduced damage from lava</div>
         <div id="drill-effect" class="effect" style="float:right; margin-top:5px; margin-right:80px; width:190px; text-align:center">Recover 5 life after a successful mining</div>
-        <div id="upgrade-ok">OK</div>
+        <div id="upgrade-ok" onclick="chooseUpgrade()"><span id="upgrade-ok-span">OK</span></div>
     </div>
     <script src="myscripts.js"></script>
 </body>
