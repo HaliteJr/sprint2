@@ -3,7 +3,7 @@
 <head>
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -111,15 +111,15 @@
 	</div>
 
     <div id="upgrade-box">
-        <div id="choose-upgrade" onclick="chooseUpgrade()">Choose Upgrade</div>
+        <div id="choose-upgrade" onclick="chooseUpgrade()"><span id="upgrade-span">Choose Upgrade</span></div>
         <div id="shield-box" style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
         <div id="drill-box" style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
-        <div id="upgrade-name" style="height:90px;width:700px; margin-top:250px">
-            <div style="float:left; margin-top:30px; margin-left:100px; width:200px; text-align:center">"Tungsten Coating" Shield</div>
-            <div style="float:right; margin-top:30px; margin-right:100px; width:200px; text-align:center">"Life Mining" Drill</div>
+        <div id="upgrade-name" style="height:90px;width:580px; margin-top:250px">
+            <div style="float:left; margin-top:30px; margin-left:80px; width:200px; text-align:center">Tungsten Shielding</div>
+            <div style="float:right; margin-top:30px; margin-right:80px; width:200px; text-align:center">Regenerative Drill</div>
         </div>
-        <div id="shield-effect" style="float:left; margin-top:5px; margin-left:100px; width:190px; text-align:center">Get 15 seconds of invincibility when drilling damagable planet</div>
-        <div id="drill-effect" style="float:right; margin-top:5px; margin-right:100px; width:190px; text-align:center">Get 4 more life after each mining using this drill upgrade</div>
+        <div id="shield-effect" class="effect" style="float:left; margin-top:5px; margin-left:80px; width:190px; text-align:center">Get 10 seconds of reduced damage from lava</div>
+        <div id="drill-effect" class="effect" style="float:right; margin-top:5px; margin-right:80px; width:190px; text-align:center">Recover 5 life after a successful mining</div>
     </div>
 </body>
 </html>
