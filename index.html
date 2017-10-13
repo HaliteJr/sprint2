@@ -3,9 +3,7 @@
 <head>
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
-
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -13,8 +11,6 @@
 <body background="assets/spacebg.png" onload="startTime(); getScore()">
 
 <div id="container">
-
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id = "nav_options_all">
@@ -101,8 +97,8 @@
             <div id="ship">
                 <img src="assets/ship01.png" onclick="myMove()" id = "mother_ship" class = "ball" alt="Ship">
             </div>
-            <div id="wingman">
-                <img src="assets/wingman01.png" id = "baby_ship" class = "ball1" alt="Wingman">
+            <div id = "baby_ship_size">
+                <div id = "baby_ship" class = "ball1"></div>
             </div>
         </div>
 
@@ -113,7 +109,6 @@
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
             <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px" onclick="updateLife(2)">
         </div>
-
 	</div>
 
     <div id="upgrade-box">
