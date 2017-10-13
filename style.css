@@ -10,6 +10,8 @@ body {
 H1 {
     float: left;
     color: white;
+    margin-top: 5vh;
+    margin-left: 5vw;
 }
 
 .mode{
@@ -22,10 +24,18 @@ H1 {
     font-size: 1em;
     color: white;
     text-align: center;
+    margin-top: 5vh;
+    margin-right: 2vh;
 }
 
 #status {
 	float: left;
+}
+
+#planets {
+    float: right;
+    margin-top: 20vh;
+    margin-left: 100vh;
 }
 
 
