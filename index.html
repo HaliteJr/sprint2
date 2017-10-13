@@ -54,16 +54,41 @@
 <body background="assets/spacebg.png" onload="startTime(); getScore()">
 <div id="container">
 
-	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <div id = "nav_options_all">
-	  	<div class = "dividing_line"></div>
-          <div class = "options_group">
-              <div href="#"><img src="assets/if_blank.png" alt="if_blank"></div>
-              <div href="#"><img src="assets/line_white.png" alt="line_white" ></div>
-              <div href="#"><img src="assets/goplanet_white.png" alt="goplanet_white" ></div>
-          </div>
-	  </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id = "nav_options_all">
+            <div class = "dividing_line"></div>
+            <div class = "options_group">
+                <div href="#"><a href="#" class="link" id="button1">
+                    <img src="assets/if_blank.png" onmouseover="this.src='assets/if_selected.png'" onmouseout="this.src='assets/if_blank.png'" alt="if_blank" style="margin-left:-10px;height:60px"></a>
+                    <div class="popup" tabindex="-1">
+                        <img src="assets/if_heart01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg()" style="float:left"><img src="assets/if_heart02.png" style="height:40px;margin-left:30px"></div>
+                        <img src="assets/if_shield01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg1()" style="float:left"><img src="assets/if_shield02.png" style="height:40px;margin-left:30px"></div>
+                        <img src="assets/if_gem01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg2()" style="float:left"><img src="assets/if_gem02.png" style="height:40px;margin-left:30px"></div>
+                        <a class="close" href="#">Close</a>
+                    </div>
+                </div>
+                <div href="#"><img src="assets/line_white.png" alt="line_white" style="margin-left:15px;margin-top:30px;height:10px"></div>
+                <div href="#"><a href="#" class="link1" id="button2">
+                    <img src="assets/goplanet_white.png" onmouseover="this.src='assets/goplanet_selected.png'" onmouseout="this.src='assets/goplanet_white.png'" alt="goplanet_white" style="margin-left:20px;margin-top:-15px;height:100px"></a>
+                    <div class="popup1" tabindex="-1">
+                        <img src="assets/planet-lava.png" style='height:100px;margin-left:30px'>
+                        <div href="#"  onclick="addImg3()" style="float:left"><img src="assets/planet-moon.png" style='height:100px;margin-left:30px'></div>
+                        <a class="close1" href="#">Close</a></div>
+                </div>
+                <a href="#" id="rere" onclick="rere()">OK</a>
+            </div>
+
+            <div class = "options_group">
+                <div href="#"><a><img src="assets/if_black.png" alt="if_blank" style="margin-left:-10px;margin-top:20px;height:60px"></a></div>
+                <div href="#"><img src="assets/line_black.png" alt="line_white" style="margin-left:15px;margin-top:50px;height:10px"></div>
+                <div href="#"><a><img src="assets/goplanet_black.png" alt="goplanet_white" style="margin-left:20px;margin-top:5px;height:100px"></a></div>
+            </div>
+
+        </div>
 <!-- 	  <a href="#">About</a>
 	  <a href="#">Services</a>
 	  <a href="#">Clients</a>
@@ -71,7 +96,52 @@
 	</div>
 	<div class = "open_nav_bar" onclick="openNav()"><img src="assets/setting_icon01.png" alt="Nav"></div>
 
+    <script>
+        function rere(){ window.location.reload();}
 
+        function addImg() {
+            document.getElementById("button1").innerHTML = "<img src=assets/if_heart02.png style='height:60px;margin-left:-10px'>";
+            $(".popup").hide();}
+
+        function addImg1() {
+            document.getElementById("button1").innerHTML = "<img src=assets/if_shield02.png style='height:60px;margin-left:-10px'>";
+            $(".popup").hide();}
+
+        function addImg2() {
+            document.getElementById("button1").innerHTML = "<img src=assets/if_gem02.png style='height:60px;margin-left:-10px'>";
+            $(".popup").hide();}
+
+        function addImg3() {
+            document.getElementById("button2").innerHTML = "<img src=assets/planet-moon.png style='margin-left:20px;margin-top:-15px;height:100px'>";
+            $(".popup1").hide();}
+
+
+
+
+        $(".link").click(function(e){
+            e.preventDefault();
+            $(".popup").fadeIn(300,function(){$(this).focus();});
+        });
+
+        $('.close').click(function() {
+            $(".popup").fadeOut(300);
+        });
+        $(".popup").on('blur',function(){
+            $(this).fadeOut(300);
+        });
+
+        $(".link1").click(function(e){
+            e.preventDefault();
+            $(".popup1").fadeIn(300,function(){$(this).focus();});
+        });
+
+        $('.close1').click(function() {
+            $(".popup1").fadeOut(300);
+        });
+        $(".popup1").on('blur',function(){
+            $(this).fadeOut(300);
+        });
+    </script>
 
     <h1><img src="assets/halitejr.png" style="height:40px"></h1>
         <div id="modes">
