@@ -12,7 +12,7 @@ body {
 #upgrade-box {
     background-color: #E6E7E8;
     margin-left: 450px;
-    height: 500px;
+    height: 530px;
     width: 580px;
     position:absolute;
     z-index: 1;
@@ -72,9 +72,9 @@ body {
 #upgrade-ok {
     background-color: #00A651;
     height: 30px;
-    margin-left: 250px;
-    margin-right:250px;
-    margin-top: 70px;
+    margin-left: 220px;
+    margin-right:220px;
+    margin-top: 90px;
     border-radius:20px;
     color: white;
     text-align: center;
@@ -100,7 +100,7 @@ body {
     display: none;
     position: absolute;
     outline:0;
-    background-color: rgba(65, 64, 66, 0.7);
+    /*background-color: rgba(65, 64, 66, 0.7);*/
 }
 
 .popup1{
@@ -110,7 +110,7 @@ body {
     display: none;
     position: absolute;
     outline:0;
-    background-color: rgba(65, 64, 66, 0.7);
+    /*background-color: rgba(65, 64, 66, 0.7);*/
 }
 
 .popup2{
@@ -121,7 +121,7 @@ body {
     display: none;
     position: absolute;
     outline:0;
-    background-color: rgba(65, 64, 66, 0.7);
+    /*background-color: rgba(65, 64, 66, 0.7);*/
 }
 
 .box{
@@ -284,10 +284,19 @@ H1:hover{
     }
 }
 
+#baby_ship{
+
+}
+
 .ball1 {
+
+    background-image: url("assets/wingman01.png");
+    background-size: 100% 100%;
     top: 380px;
     left: 60px;
-    height: 50px;
+    height: 45px;
+    width: 70px;
+ 
 
 
     animation: bounce 0.6s infinite alternate;

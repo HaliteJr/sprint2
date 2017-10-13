@@ -3,9 +3,7 @@
 <head>
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
-
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -13,8 +11,6 @@
 <body background="assets/spacebg.png" onload="startTime(); getScore()">
 
 <div id="container">
-
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id = "nav_options_all">
@@ -40,7 +36,7 @@
                         <div href="#"  onclick="addImg3()" style="float:left"><img src="assets/planet-moon.png" style='height:100px;margin-left:30px'></div>
                         <a class="close1" href="#">Close</a></div>
                 </div>
-                <a href="#" id="rere" onclick="rere()">OK</a>
+
             </div>
 
             <div class = "options_group">
@@ -55,6 +51,7 @@
                     <div href="#"  onclick="addImg8()" style="float:left"><img src="assets/planet-moon.png" style='height:100px;margin-left:30px'></div>
                     <a class="close2" href="#">Close</a></div>
             </div>
+            <a href="#" id="rere" onclick="rere()" style="margin-left: 300px">OK</a>
 
         </div>
 	</div>
@@ -89,6 +86,8 @@
                 <div class="text" style="float:left">x 0</div>
             </div>
 
+            <div id="upgrade-icon"></div>
+
             <div class="text" id="mission" style="margin-right:50px;float:right">MISSION 005</div>
             <div class="text" id="points" style="margin-right:50px;float:right"></div>
 
@@ -98,8 +97,8 @@
             <div id="ship">
                 <img src="assets/ship01.png" onclick="myMove()" id = "mother_ship" class = "ball" alt="Ship">
             </div>
-            <div id="wingman">
-                <img src="assets/wingman01.png" id = "baby_ship" class = "ball1" alt="Wingman">
+            <div id = "baby_ship_size">
+                <div id = "baby_ship" class = "ball1"></div>
             </div>
         </div>
 
@@ -110,11 +109,6 @@
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
             <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px" onclick="updateLife(2)">
         </div>
-
-    <script src="myscripts.js"></script>
-
-	<script src="myscripts.js"></script>
-
 	</div>
 
     <div id="upgrade-box">
@@ -127,7 +121,7 @@
         </div>
         <div id="shield-effect" class="effect" style="float:left; margin-top:5px; margin-left:80px; width:190px; text-align:center">Get 10 seconds of reduced damage from lava</div>
         <div id="drill-effect" class="effect" style="float:right; margin-top:5px; margin-right:80px; width:190px; text-align:center">Recover 5 life after a successful mining</div>
-        <div id="upgrade-ok" onclick="chooseUpgrade()"><span id="upgrade-ok-span">OK</span></div>
+        <div id="upgrade-ok" onclick="chooseUpgrade()"><span id="upgrade-ok-span">Upgrade</span></div>
     </div>
     <script src="myscripts.js"></script>
 </body>
