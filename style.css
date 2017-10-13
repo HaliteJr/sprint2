@@ -6,6 +6,40 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#upgrade-box {
+    background-color: white;
+    margin-left: 400px;
+    height: 600px;
+    width: 700px;
+    position:absolute;
+    z-index: 1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#choose-upgrade {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 2em;
+}
+
+.upgrade {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+#shield {
+    margin-left: 100px;
+}
+
+#drill {
+    margin-right: 100px;
+}
 
 .menu_options{
     border: 2px solid #a1a1a1;
@@ -14,6 +48,33 @@ body {
     width: 355px;
     height: 100px;
     border-radius: 40px;
+}
+
+.popup{
+    width: 500px;
+    height: 300px;
+
+    display: none;
+    position: absolute;
+    outline:0;
+    background-color: rgba(65, 64, 66, 0.7);
+}
+
+.popup1{
+    width: 400px;
+    height: 300px;
+
+    display: none;
+    position: absolute;
+    outline:0;
+    background-color: rgba(65, 64, 66, 0.7);
+}
+
+.box{
+    border: 1px solid red;
+    margin-left: 100px;
+    position: relative;
+
 }
 
 .options_group {
@@ -25,7 +86,7 @@ body {
 H1 {
     float: left;
     color: white;
-    margin-top: 5vh;
+    margin-top: 4.2vh;
     margin-left: 5vw;
 }
 
@@ -41,7 +102,7 @@ H1:hover{
     font-size: 1em;
     color: white;
     text-align: center;
-    margin-top: 6vh;
+    margin-top: 6.5vh;
 }
 
 .mode:hover{
@@ -53,7 +114,7 @@ H1:hover{
 }
 
 #status {
-    margin-top: 15vh;
+    margin-top: 3.2vh;
     height: 10vh;
 }
 
@@ -91,10 +152,11 @@ H1:hover{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.74); /* Black*/
+    background-color: rgba(65, 64, 66, 0.7); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
 }
 #nav_options_all{
 	padding-left: 30%;
