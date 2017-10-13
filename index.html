@@ -3,14 +3,22 @@
 <head>
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
+<<<<<<< HEAD
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+=======
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
+
+>>>>>>> 7f22034a1c38fb71a05de956ae48b9a283946670
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 
+<<<<<<< HEAD
 <body background="assets/spacebg.png" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+=======
+>>>>>>> 7f22034a1c38fb71a05de956ae48b9a283946670
 <body background="assets/spacebg.png" onload="startTime(); getScore()">
 
 <div id="container">
@@ -83,9 +91,6 @@
                 <div class="text" style="float:left">x 0</div>
             </div>
 
-            <div class="text" id="points" style="margin-right:50px;float:right">MISSION 005</div>
-            <!-- <div class="text" id="mission" style="margin-right:50px;float:right">SCORES: 000000</div> -->
-
             <div class="text" id="mission" style="margin-right:50px;float:right">MISSION 005</div>
             <div class="text" id="points" style="margin-right:50px;float:right"></div>
 
@@ -107,18 +112,24 @@
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
             <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px" onclick="updateLife(2)">
         </div>
+<<<<<<< HEAD
+=======
+    <script src="myscripts.js"></script>
+
+	<script src="myscripts.js"></script>
+>>>>>>> 7f22034a1c38fb71a05de956ae48b9a283946670
 	</div>
 
     <div id="upgrade-box">
-        <div id="choose-upgrade">Choose Upgrade</div>
-        <div style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
-        <div style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
-        <div id="upgrade-name" style="height:90px;width:700px; margin-top:250px">
-            <div style="float:left; margin-top:30px; margin-left:100px; width:200px; text-align:center">"Tungsten Coating" Shield</div>
-            <div style="float:right; margin-top:30px; margin-right:100px; width:200px; text-align:center">"Life Mining" Drill</div>
+        <div id="choose-upgrade" onclick="chooseUpgrade()"><span id="upgrade-span">Choose Upgrade</span></div>
+        <div id="shield-box" style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
+        <div id="drill-box" style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
+        <div id="upgrade-name" style="height:90px;width:580px; margin-top:250px">
+            <div style="float:left; margin-top:30px; margin-left:80px; width:200px; text-align:center">Tungsten Shielding</div>
+            <div style="float:right; margin-top:30px; margin-right:80px; width:200px; text-align:center">Regenerative Drill</div>
         </div>
-        <div id="shield-effect" style="float:left; margin-top:5px; margin-left:100px; width:190px; text-align:center">Get 15 seconds of invincibility when drilling damagable planet</div>
-        <div id="drill-effect" style="float:right; margin-top:5px; margin-right:100px; width:190px; text-align:center">Get 4 more life after each mining using this drill upgrade</div>
+        <div id="shield-effect" class="effect" style="float:left; margin-top:5px; margin-left:80px; width:190px; text-align:center">Get 10 seconds of reduced damage from lava</div>
+        <div id="drill-effect" class="effect" style="float:right; margin-top:5px; margin-right:80px; width:190px; text-align:center">Recover 5 life after a successful mining</div>
     </div>
     <script src="myscripts.js"></script>
 </body>

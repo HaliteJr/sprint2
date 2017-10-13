@@ -242,3 +242,4 @@ function myleftMove(leftPosValue, nextMove) {
 
 
 goingRedtoBlue();
+
