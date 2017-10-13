@@ -29,14 +29,10 @@ H1 {
 }
 
 #status {
-	float: left;
+    margin-top: 15vh;
+    height: 10vh;
 }
 
-#ships {
-
-    margin-top: 20vh;
-    margin-left: 5vh;
-}
 
 #planets {
     float: right;
@@ -44,7 +40,9 @@ H1 {
     margin-right: 5vh;
 }
 
-
+.text {
+    color: white;
+}
 
 /* The side navigation menu */
 .open_nav_bar{
