@@ -54,7 +54,9 @@ H1 {
 }
 
 .text {
+    font-size: 1.5em;
     color: white;
+    text-align: center;
 }
 
 /* The side navigation menu */
