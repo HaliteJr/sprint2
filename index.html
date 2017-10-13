@@ -11,6 +11,22 @@
     const start = new Date();
     const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
 
+    var score = 0;
+
+    function getScore() {
+        var scoreString = score.toString();
+        document.getElementById('points').innerHTML = "SCORES : "+ "0".repeat(6 - scoreString.length) + scoreString;
+    }
+
+    function addScore() {
+        score += 500;
+        getScore();
+    }
+
+    function updateLife() {
+        document.getElementById('life').innerHTML = '<img src="assets/heart_bar.png" alt="Life" style="margin-left:5vw">';
+    }
+
     function startTime() {
     var today = new Date();
     var currsec = today.getHours()*3600+today.getMinutes()*60+today.getSeconds();
@@ -29,7 +45,7 @@
     </script>
 </head>
 
-<body background="assets/spacebg.png" onload="startTime()">
+<body background="assets/spacebg.png" onload="startTime(); getScore()">
 <div id="container">
 
 	<div id="mySidenav" class="sidenav">
@@ -80,8 +96,8 @@
                 <div class="text" style="float:left">x 0</div>
             </div>
 
-            <div class="text" id="points" style="margin-right:50px;float:right">MISSION 005</div>
-            <div class="text" id="mission" style="margin-right:50px;float:right">SCORES : 000000</div>
+            <div class="text" id="mission" style="margin-right:50px;float:right">MISSION 005</div>
+            <div class="text" id="points" style="margin-right:50px;float:right"></div>
         </div>
 
         <div id="ships">
@@ -96,7 +112,7 @@
 	<script src="myscripts.js"></script>
 
         <div id="planets">
-            <img id="lava1" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:20px; margin-bottom:340px">
+            <img id="lava1" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:20px; margin-bottom:340px" onclick="addScore()">
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
             <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px">
         </div>
