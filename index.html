@@ -4,6 +4,7 @@
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -14,16 +15,11 @@
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  <div id = "nav_options_all">
 	  	<div class = "dividing_line"></div>
-		  <div class = "options_group">
-			  <div href="#" class = "menu_options" ></div>
-			  <div href="#" class = "menu_options" ></div>
-			  <div href="#" class = "menu_options" ></div>
-		  </div>
-		  <div class = "options_group">
-			  <div href="#" class = "menu_options" ></div>
-			  <div href="#" class = "menu_options" ></div>
-			  <div href="#" class = "menu_options" ></div>
-		  </div>
+          <div class = "options_group">
+              <div href="#"><img src="assets/if_blank.png" alt="if_blank"></div>
+              <div href="#"><img src="assets/line_white.png" alt="line_white" ></div>
+              <div href="#"><img src="assets/goplanet_white.png" alt="goplanet_white" ></div>
+          </div>
 	  </div>
 <!-- 	  <a href="#">About</a>
 	  <a href="#">Services</a>
@@ -36,28 +32,33 @@
 
     <h1><img src="assets/halitejr.png" style="height:40px"></h1>
         <div id="modes">
-            <div class="mode" id="practice">PRACTICE FIELD</div>
+            <div class="mode" id="practice" style="margin-right:37px">PRACTICE FIELD</div>
             <div class="mode" id="combat">COMBAT</div>
             <div class="mode" id="campaign">PILOT MISSIONS</div>
         </div>
         <div id="status">
-            <div id="life-engine" style="width: 100px; margin-left:60px; float:left">
-                <div id="life"><img src="assets/heart_bar.png" alt="Life" style="margin-left:10px"></div>
-                <div id="engine"><img src="assets/engine_bar.png" alt="Engine" style="margin-left:10px; margin-top:5px"></div>
+
+            <div id="life-engine" style="width: 100px; float:left">
+                <div id="life"><img src="assets/heart_bar.png" alt="Life" style="margin-left:5vw"></div>
+                <div id="engine"><img src="assets/engine_bar.png" alt="Engine" style="margin-left:4.8vw; margin-top:5px"></div>
             </div>
             <div id="time">
-                <img src="assets/time.png" alt="Time" style="margin-left:200px;float:left">
-                <div class="text" id="timer" style="float:left"></div>
+                <img src="assets/time.png" alt="Time" style="margin-left:230px;padding-right: 10px;float:left">
+                <div class="text" id="timer" style="float:left;width: 73px"></div>
             </div>
-            <div id="yellow-gem">
-                <img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:60px;float:left;">
-                <div class="text" style="float:left;">x5</div>
-            </div>
+
+            <!--<div id="yellow-gem">-->
+                <!--<img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:40px;padding-right: 10px;float:left; height: 25px">-->
+                <!--<div class="text" style="float:left;">x5</div>-->
+            <!--</div>-->
+
             <div id="purple-gem">
-                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:60px;float:left">
-                <div class="text" style="float:left">x0</div>
+                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:40px;padding-right: 10px;float:left;height: 25px">
+
+                <div class="text" style="float:left">x 0</div>
             </div>
-            <div class="text" id="points" style="margin-right:50px;float:right">MISSION 001</div>
+
+            <div class="text" id="points" style="margin-right:50px;float:right">MISSION 005</div>
             <div class="text" id="mission" style="margin-right:50px;float:right">SCORES:000000</div>
         </div>
 
