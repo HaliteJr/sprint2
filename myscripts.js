@@ -130,6 +130,11 @@ var wingman = document.getElementById("baby_ship");
     wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
     }, 14500);
 
+   setTimeout(function(){ 
+    var confused = document.getElementById("confused"); 
+    confused.style.display = "inline";
+    }, 16000);
+
 }
 
 goingRedtoBlueFail();
