@@ -10,6 +10,8 @@ body {
 H1 {
     float: left;
     color: white;
+    margin-top: 5vh;
+    margin-left: 5vw;
 }
 
 .mode{
@@ -22,10 +24,18 @@ H1 {
     font-size: 1em;
     color: white;
     text-align: center;
+    margin-top: 5vh;
+    margin-right: 2vh;
 }
 
 #status {
 	float: left;
+}
+
+#planets {
+    float: right;
+    margin-top: 20vh;
+    margin-left: 100vh;
 }
 
 
@@ -35,6 +45,8 @@ H1 {
 	width: 60px;
 	height: 60px;
 	background-color: red;
+	position: absolute;
+	margin-top: 650px;
 }
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -43,7 +55,7 @@ H1 {
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: blue; /* Black*/
+    background-color: rgb(255, 255, 255, 0.67); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -83,4 +95,59 @@ H1 {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+/* Summer Shi */
+.ball {
+    margin-top: 150px;
+    margin-left:200px;
+    height: 50px;
+
+
+    animation: bounce 0.8s infinite alternate;
+    -webkit-animation: bounce 1.0s infinite alternate;
+    position:absolute;
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-18px);
+    }
+}
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-18px);
+    }
+}
+
+.ball1 {
+    margin-top: 220px;
+    margin-left: 130px;
+    height: 50px;
+
+
+    animation: bounce 0.6s infinite alternate;
+    -webkit-animation: bounce 0.6s infinite alternate;
+    position:absolute;
+}
+@keyframes1 bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-18px);
+    }
+}
+@-webkit-keyframes1 bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-18px);
+    }
 }
