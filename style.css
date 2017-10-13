@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#container {border: 1px solid black;}
+#container {border: 1px solid transparent;}
 H1 {
     float: left;
     color: white;
@@ -41,7 +41,7 @@ H1 {
 }
 
 .text {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: white;
     text-align: center;
 }

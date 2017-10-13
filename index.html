@@ -8,15 +8,18 @@
 </script>
     <style></style>
     <script>
+    const start = new Date();
+    const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
+
     function startTime() {
     var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
+    var currsec = today.getHours()*3600+today.getMinutes()*60+today.getSeconds();
+    var m = Math.floor((currsec-startsec)/60);
+    var s = (currsec-startsec)%60;
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('timer').innerHTML =
-    h + ":" + m + ":" + s;
+    m + ":" + s;
     var t = setTimeout(startTime, 500);
     }
     function checkTime(i) {
@@ -56,15 +59,15 @@
                 <div class="text" id="timer" style="float:left"></div>
             </div>
             <div id="yellow-gem">
-                <img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:60px;float:left;location:fixed">
-                <div class="text" style="float:left">x5</div>
+                <img src="assets/gem-yellow.png" alt="Yellow Gem" style="margin-left:40px;float:left;">
+                <div class="text" style="float:left;">x5</div>
             </div>
             <div id="purple-gem">
-                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:60px;float:left">
+                <img src="assets/gem-purple.png" alt="Purple Gem" style="margin-left:40px;float:left">
                 <div class="text" style="float:left">x0</div>
             </div>
-            <div class="text" id="points" style="margin-left:160px;float:left">MISSION</div>
-            <div class="text" id="mission" style="margin-left:50px;float:left">SCORES</div>
+            <div class="text" id="points" style="margin-left:160px;float:left">SCORES:000000</div>
+            <div class="text" id="mission" style="margin-left:50px;float:left">MISSION 001</div>
         </div>
 
         <div id="ships">
