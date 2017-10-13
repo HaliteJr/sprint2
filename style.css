@@ -29,6 +29,10 @@ H1 {
     margin-left: 5vw;
 }
 
+H1:hover{
+    cursor: pointer;
+}
+
 .mode{
 
     height: 40px;
@@ -75,6 +79,11 @@ H1 {
     bottom: 5vh;
 	/*margin-top: 30%;*/
 }
+
+.open_nav_bar:hover{
+    cursor: pointer;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
