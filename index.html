@@ -12,6 +12,8 @@
     const startsec = start.getHours()*3600+start.getMinutes()*60+start.getSeconds();
 
     var score = 0;
+    var life = 12;
+    var energy = 12;
 
     function getScore() {
         var scoreString = score.toString();
@@ -23,8 +25,12 @@
         getScore();
     }
 
-    function updateLife() {
-        document.getElementById('life').innerHTML = '<img src="assets/heart_bar.png" alt="Life" style="margin-left:5vw">';
+    function updateLife(n) {
+        life -= n;
+        if (life < 0) {
+            life = 0;
+        }
+        document.getElementById('life').innerHTML = '<img src="assets/heart_bar' + life + '.png" alt="Life" style="margin-left:5vw">';
     }
 
     function startTime() {
@@ -77,8 +83,8 @@
         <div id="status">
 
             <div id="life-engine" style="width: 100px; float:left">
-                <div id="life"><img src="assets/heart_bar.png" alt="Life" style="margin-left:5vw"></div>
-                <div id="engine"><img src="assets/engine_bar.png" alt="Engine" style="margin-left:4.75vw; margin-top:5px"></div>
+                <div id="life"><img src="assets/heart_bar12.png" alt="Life" style="margin-left:5vw"></div>
+                <div id="engine"><img src="assets/engine_bar12.png" alt="Engine" style="margin-left:4.75vw; margin-top:5px"></div>
             </div>
             <div id="time">
                 <img src="assets/time.png" alt="Time" style="margin-left:230px;padding-right: 10px;float:left">
@@ -114,7 +120,7 @@
         <div id="planets">
             <img id="lava1" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:20px; margin-bottom:340px" onclick="addScore()">
             <img id="moon" src="assets/planet-moon.png" alt="Moon" style="margin-left:80px; margin-bottom:30px">
-            <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px">
+            <img id="lava2" src="assets/planet-lava.png" alt="Lava Planet" style="margin-left:100px; margin-bottom:260px" onclick="updateLife(2)">
         </div>
         <script src="myscripts.js"></script>
 
