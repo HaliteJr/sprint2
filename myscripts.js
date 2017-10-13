@@ -14,9 +14,9 @@ function closeNav() {
 function ending() {
     $('#ending').show();
     if (shieldChosen) {
-        document.getElementById('ending').innerHTML = '<img src="assets/mission-over.png">'
+        document.getElementById('ending').innerHTML = '<img style="height:530px;margin-left: 430px;" src="assets/mission-over.png">'
     } else if (drillChosen) {
-        document.getElementById('ending').innerHTML = '<img src="assets/mission-completed.png">'
+        document.getElementById('ending').innerHTML = '<img style="height:530px;margin-left: 430px;" src="assets/mission-completed.png">'
     }
 }
 
