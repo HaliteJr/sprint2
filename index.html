@@ -4,10 +4,10 @@
 <title>Halite Junior</title>
 <link rel = "stylesheet" type = "text/css" href = "style.css" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
+
 <body background="assets/spacebg.png" onload="startTime(); getScore()">
 
 <div id="container">
@@ -19,11 +19,11 @@
                 <div href="#"><a href="#" class="link" id="button1">
                     <img src="assets/if_blank.png" onmouseover="this.src='assets/if_selected.png'" onmouseout="this.src='assets/if_blank.png'" alt="if_blank" style="margin-left:-10px;height:60px"></a>
                     <div class="popup" tabindex="-1">
-                        <img src="assets/if_heart01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg5()" style="float:left"><img src="assets/if_heart01.png" style="height:40px;margin-left:30px"></div>
                         <div href="#"  onclick="addImg()" style="float:left"><img src="assets/if_heart02.png" style="height:40px;margin-left:30px"></div>
-                        <img src="assets/if_shield01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg6()" style="float:left"><img src="assets/if_shield01.png" style="height:40px;margin-left:30px"></div>
                         <div href="#"  onclick="addImg1()" style="float:left"><img src="assets/if_shield02.png" style="height:40px;margin-left:30px"></div>
-                        <img src="assets/if_gem01.png" style="height:40px;margin-left:30px">
+                        <div href="#"  onclick="addImg7()" style="float:left"><img src="assets/if_gem01.png" style="height:40px;margin-left:30px"></div>
                         <div href="#"  onclick="addImg2()" style="float:left"><img src="assets/if_gem02.png" style="height:40px;margin-left:30px"></div>
                         <a class="close" href="#">Close</a>
                     </div>
@@ -32,7 +32,7 @@
                 <div href="#"><a href="#" class="link1" id="button2">
                     <img src="assets/goplanet_white.png" onmouseover="this.src='assets/goplanet_selected.png'" onmouseout="this.src='assets/goplanet_white.png'" alt="goplanet_white" style="margin-left:20px;margin-top:-15px;height:100px"></a>
                     <div class="popup1" tabindex="-1">
-                        <img src="assets/planet-lava.png" style='height:100px;margin-left:30px'>
+                        <div href="#"  onclick="addImg4()" style="float:left"><img src="assets/planet-lava.png" style='height:100px;margin-left:30px'></div>
                         <div href="#"  onclick="addImg3()" style="float:left"><img src="assets/planet-moon.png" style='height:100px;margin-left:30px'></div>
                         <a class="close1" href="#">Close</a></div>
                 </div>
@@ -40,9 +40,16 @@
             </div>
 
             <div class = "options_group">
-                <div href="#"><a><img src="assets/if_black.png" alt="if_blank" style="margin-left:-10px;margin-top:20px;height:60px"></a></div>
+
+                <div href="#"><a href="#" id="button3"><img src="assets/if_black.png" alt="if_blank" style="margin-left:-10px;margin-top:20px;height:60px"></a></div>
                 <div href="#"><img src="assets/line_black.png" alt="line_white" style="margin-left:15px;margin-top:50px;height:10px"></div>
-                <div href="#"><a><img src="assets/goplanet_black.png" alt="goplanet_white" style="margin-left:20px;margin-top:5px;height:100px"></a></div>
+
+                <div href="#"><a href="#" class="link2" id="button4">
+                    <img src="assets/goplanet_black.png" alt="goplanet_white" style="margin-left:20px;margin-top:5px;height:100px"></a></div>
+                <div class="popup2" tabindex="-1">
+                    <div href="#"  onclick="addImg9()" style="float:left"><img src="assets/planet-lava.png" style='height:100px;margin-left:30px'></div>
+                    <div href="#"  onclick="addImg8()" style="float:left"><img src="assets/planet-moon.png" style='height:100px;margin-left:30px'></div>
+                    <a class="close2" href="#">Close</a></div>
             </div>
 
         </div>
@@ -105,12 +112,13 @@
         <div id="choose-upgrade" onclick="chooseUpgrade()"><span id="upgrade-span">Choose Upgrade</span></div>
         <div id="shield-box" style="float:left"><img id="shield" class="upgrade" src="assets/upgrade_shield.png" alt="Shield" onclick="upgradeShield()"></div>
         <div id="drill-box" style="float:right"><img id="drill" class="upgrade" src="assets/upgrade_drill.png" alt="Drill" onclick="upgradeDrill()"></div>
-        <div id="upgrade-name" style="height:90px;width:580px; margin-top:250px">
-            <div style="float:left; margin-top:30px; margin-left:80px; width:200px; text-align:center">Tungsten Shielding</div>
-            <div style="float:right; margin-top:30px; margin-right:80px; width:200px; text-align:center">Regenerative Drill</div>
+        <div id="upgrade-name" style="height:50px;width:580px; margin-top:250px">
+            <div style="float:left; margin-top:20px; margin-left:80px; width:200px; text-align:center">Tungsten Shielding</div>
+            <div style="float:right; margin-top:20px; margin-right:80px; width:200px; text-align:center">Regenerative Drill</div>
         </div>
         <div id="shield-effect" class="effect" style="float:left; margin-top:5px; margin-left:80px; width:190px; text-align:center">Get 10 seconds of reduced damage from lava</div>
         <div id="drill-effect" class="effect" style="float:right; margin-top:5px; margin-right:80px; width:190px; text-align:center">Recover 5 life after a successful mining</div>
+        <div id="upgrade-ok">OK</div>
     </div>
     <script src="myscripts.js"></script>
 </body>

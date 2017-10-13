@@ -6,15 +6,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
 #upgrade-box {
     background-color: #E6E7E8;
-    margin-left: 400px;
-    height: 600px;
+    margin-left: 450px;
+    height: 500px;
     width: 580px;
     position:absolute;
     z-index: 1;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-radius: 30px;
 }
 
 #choose-upgrade {
@@ -23,12 +25,12 @@ body {
     background-color: #2E76FC;
     color: white;
     text-align: center;
-    height: 100px;
+    height: 80px;
     font-size: 2em;
 }
 
 #upgrade-span {
-    vertical-align: -28px;
+    vertical-align: -20px;
 }
 
 #choose-upgrade:hover{
@@ -67,6 +69,17 @@ body {
     font-style: italic;
 }
 
+#upgrade-ok {
+    background-color: green;
+    height: 30px;
+    margin-left: 250px;
+    margin-right:250px;
+    margin-top: 70px;
+    border-radius:20px;
+    color: white;
+    text-align: center;
+}
+
 .menu_options{
     border: 2px solid #a1a1a1;
     border-style: dotted;
@@ -77,7 +90,7 @@ body {
 }
 
 .popup{
-    width: 500px;
+    width: 400px;
     height: 300px;
 
     display: none;
@@ -96,6 +109,17 @@ body {
     background-color: rgba(65, 64, 66, 0.7);
 }
 
+.popup2{
+    width: 400px;
+    height: 300px;
+    margin-left:450px;
+    margin-top:120px;
+    display: none;
+    position: absolute;
+    outline:0;
+    background-color: rgba(65, 64, 66, 0.7);
+}
+
 .box{
     border: 1px solid red;
     margin-left: 100px;
@@ -107,7 +131,10 @@ body {
     display: flex;
 }
 
-#container {border: 1px solid transparent;}
+#container {
+    border: 1px solid transparent;
+    height: 150px;
+}
 
 H1 {
     float: left;
