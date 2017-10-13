@@ -22,38 +22,54 @@ function goingBlueFirst(){
 
 function goingRedtoBlue(){
 	
-    var elem = document.getElementById("mother_ship"); 
-    
-    
-        var leftPos = 80;
-        var id = setInterval(frame, 10);
+var elem = document.getElementById("mother_ship"); 
 
-        function frame() {
-            if (leftPos == 700) {
-                clearInterval(id);
-            } else {
-                leftPos++; 
-                elem.style.left = leftPos + 'px'; 
-            }
-        }
-
-
-
-setTimeout(function(){
-    var topPos = 300;
-    var leftPos = 700;
+    var leftPos = 80;
     var id = setInterval(frame, 10);
+
     function frame() {
-        if (leftPos == 900) {
+        if (leftPos == 700) {
             clearInterval(id);
         } else {
             leftPos++; 
-            topPos = topPos + 1.4;
-            elem.style.top = topPos+ 'px'; 
             elem.style.left = leftPos + 'px'; 
         }
     }
+
+    setTimeout(function(){
+        var topPos = 300;
+        var leftPos = 700;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 900) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos + 1.4;
+                elem.style.top = topPos+ 'px'; 
+                elem.style.left = leftPos + 'px'; 
+            }
+        }
     }, 6200);
+
+
+    setTimeout(function(){
+        var topPos = 580;
+        var leftPos = 900;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 1100) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos - 1;
+                elem.style.top = topPos + 'px'; 
+                elem.style.left = leftPos + 'px'; 
+            }
+        }    
+
+    }, 8200);
+
 
 }
 
