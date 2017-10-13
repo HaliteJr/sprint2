@@ -14,9 +14,9 @@ function closeNav() {
 function ending() {
     $('#ending').show();
     if (shieldChosen) {
-        document.getElementById('ending').innerHTML = '<img src="assets/mission-over.png">'
+        document.getElementById('ending').innerHTML = '<img style="height:530px;margin-left: 430px;" src="assets/mission-over.png">'
     } else if (drillChosen) {
-        document.getElementById('ending').innerHTML = '<img src="assets/mission-completed.png">'
+        document.getElementById('ending').innerHTML = '<img style="height:530px;margin-left: 430px;" src="assets/mission-completed.png">'
     }
 }
 
@@ -57,6 +57,7 @@ var wingman = document.getElementById("baby_ship");
 
    setTimeout(function(){ 
     wingman.style.backgroundImage = "url('assets/wingman01_shield_drill.png')";
+    updateLife(5);
     }, 5900);
 
 
@@ -128,6 +129,7 @@ var wingman = document.getElementById("baby_ship");
 
    setTimeout(function(){ 
     wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
+    ending();
     }, 14500);
 
    setTimeout(function(){ 
@@ -135,9 +137,9 @@ var wingman = document.getElementById("baby_ship");
     confused.style.display = "inline";
     }, 16000);
 
+
 }
 
-goingRedtoBlueFail();
 
 
 function goingRedtoBlue(){
@@ -430,7 +432,11 @@ return i;
 
 function rere(){
     closeNav();
-    goingRedtoBlue();
+    if (shieldChosen) {
+        goingRedtoBlueFail();
+    } else {
+        goingRedtoBlue();
+    }
 }
 
 
