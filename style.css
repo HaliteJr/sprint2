@@ -42,16 +42,20 @@ H1 {
 }
 
 #status {
-	float: left;
+    margin-top: 15vh;
+    height: 10vh;
 }
+
 
 #planets {
     float: right;
-    margin-top: 20vh;
-    margin-left: 100vh;
+    margin-top: 5vh;
+    margin-right: 5vh;
 }
 
-
+.text {
+    color: white;
+}
 
 /* The side navigation menu */
 .open_nav_bar{
@@ -116,8 +120,8 @@ H1 {
 
 /* Summer Shi */
 .ball {
-    margin-top: 150px;
-    margin-left:200px;
+    margin-top: 90px;
+    margin-left:80px;
     height: 50px;
 
 
@@ -143,8 +147,8 @@ H1 {
 }
 
 .ball1 {
-    margin-top: 220px;
-    margin-left: 130px;
+    margin-top: 170px;
+    margin-left: 60px;
     height: 50px;
 
 
