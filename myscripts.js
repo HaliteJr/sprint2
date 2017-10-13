@@ -16,41 +16,24 @@ function goingRedFirst(){
 }
 
 function goingBlueFirst(){
-	myRightAngleMove();
+	myRightAngleMove(300, 80, 350, 900);
 }
-
-
-setTimeout(goingRedFirst(), 10);
-setTimeout(goingRedtoBlue(), 10);
-
-
 
 
 function goingRedtoBlue(){
-	var elem = document.getElementById("mother_ship"); 
-    var topPos = 300;
-    var leftPos = 700;
-    var id = setInterval(frame, 7);
-    function frame() {
-        if (leftPos == 900) {
-            clearInterval(id);
-        } else {
-            leftPos++; 
-            topPos = topPos + 1.4;
-            elem.style.top = topPos+ 'px'; 
-            elem.style.left = leftPos + 'px'; 
-        }
-    }
+	myleftMove(700);
+    myRightAngleMove();
 }
 
 
-function myRightAngleMove() {
+
+function myRightAngleMove(topPos, leftPos, intendedLeftPos, myleftMoveValue) {
     var elem = document.getElementById("mother_ship"); 
-    var topPos = 300;
-    var leftPos = 80;
+    var topPos = topPos;
+    var leftPos = leftPos;
     var id = setInterval(frame, 10);
     function frame() {
-        if (leftPos == 350) {
+        if (leftPos == intendedLeftPos) {
             clearInterval(id);
         } else {
             leftPos++; 
@@ -59,8 +42,9 @@ function myRightAngleMove() {
             elem.style.left = leftPos + 'px'; 
         }
     }
-    myleftMove(900);
+    myleftMove(myleftMoveValue);
 }
+
 function myleftMove(leftPosValue) {
     var elem = document.getElementById("mother_ship"); 
     var leftPos = 80;
@@ -74,6 +58,13 @@ function myleftMove(leftPosValue) {
         }
     }
 }
+
+
+
+
+
+
+goingBlueFirst()
 
 
     const start = new Date();
