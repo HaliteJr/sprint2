@@ -32,10 +32,16 @@ H1 {
 	float: left;
 }
 
+#ships {
+
+    margin-top: 20vh;
+    margin-left: 5vh;
+}
+
 #planets {
     float: right;
-    margin-top: 20vh;
-    margin-left: 100vh;
+    margin-top: 5vh;
+    margin-right: 5vh;
 }
 
 
@@ -99,8 +105,8 @@ H1 {
 
 /* Summer Shi */
 .ball {
-    margin-top: 150px;
-    margin-left:200px;
+    margin-top: 90px;
+    margin-left:80px;
     height: 50px;
 
 
@@ -126,8 +132,8 @@ H1 {
 }
 
 .ball1 {
-    margin-top: 220px;
-    margin-left: 130px;
+    margin-top: 170px;
+    margin-left: 60px;
     height: 50px;
 
 
