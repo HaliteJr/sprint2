@@ -253,11 +253,19 @@ H1:hover{
     }
 }
 
+#baby_ship{
+
+}
+
 .ball1 {
+
+    background-image: url("assets/wingman01.png");
+    background-size: 100% 100%;
     top: 380px;
     left: 60px;
-    height: 50px;
-    background-image:"assets/wingman01.png";
+    height: 45px;
+    width: 70px;
+ 
 
 
     animation: bounce 0.6s infinite alternate;

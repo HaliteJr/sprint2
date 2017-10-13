@@ -128,7 +128,7 @@ function goingRedtoBlue(){
 	
 var elem = document.getElementById("mother_ship"); 
 var wingman = document.getElementById("baby_ship");
-var wingman_image = document.getElementById("wingman");
+
 
     var leftPos = 80;
     var wingman_leftPos = 60;
@@ -145,63 +145,62 @@ var wingman_image = document.getElementById("wingman");
             elem.style.left = leftPos + 'px'; 
         }
     }
-    wingman_image.style.backgroundImage = "url('assets/drill_1.png')";
 
-    // setTimeout(function(){
-    //     var topPos = 300;
-    //     var leftPos = 700;
+    setTimeout(function(){
+        var topPos = 300;
+        var leftPos = 700;
 
-    //     var wingman_leftPos = 680;
-    //     var wingman_topPos = 380;
+        var wingman_leftPos = 680;
+        var wingman_topPos = 380;
 
-    //     var id = setInterval(frame, 10);
-    //     function frame() {
-    //         if (leftPos == 900) {
-    //             clearInterval(id);
-    //         } else {
-    //             leftPos++; 
-    //             topPos = topPos + 1.4;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 900) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos + 1.4;
 
-    //             wingman_leftPos++;
-    //             wingman_topPos = wingman_topPos + 1.4;
+                wingman_leftPos++;
+                wingman_topPos = wingman_topPos + 1.4;
 
-    //             elem.style.top = topPos+ 'px'; 
-    //             elem.style.left = leftPos + 'px'; 
+                elem.style.top = topPos+ 'px'; 
+                elem.style.left = leftPos + 'px'; 
                 
-    //             wingman.style.top = wingman_topPos + 'px';
-    //             wingman.style.left = wingman_leftPos + 'px';
-    //         }
-    //     }
-    // }, 6200);
+                wingman.style.top = wingman_topPos + 'px';
+                wingman.style.left = wingman_leftPos + 'px';
+            }
+        }
+    }, 6200);
 
 
-    // setTimeout(function(){
-    //     var topPos = 580;
-    //     var leftPos = 900;
+    setTimeout(function(){
+        var topPos = 580;
+        var leftPos = 900;
 
-    //     var wingman_topPos = 660;
-    //     var wingman_leftPos = 880;
+        var wingman_topPos = 660;
+        var wingman_leftPos = 880;
 
-    //     var id = setInterval(frame, 10);
-    //     function frame() {
-    //         if (leftPos == 1100) {
-    //             clearInterval(id);
-    //         } else {
-    //             leftPos++; 
-    //             topPos = topPos - 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (leftPos == 1100) {
+                clearInterval(id);
+            } else {
+                leftPos++; 
+                topPos = topPos - 1;
 
-    //             wingman_leftPos++;
-    //             wingman_topPos = wingman_topPos - 1;
+                wingman_leftPos++;
+                wingman_topPos = wingman_topPos - 1;
 
-    //             elem.style.top = topPos + 'px'; 
-    //             elem.style.left = leftPos + 'px'; 
+                elem.style.top = topPos + 'px'; 
+                elem.style.left = leftPos + 'px'; 
 
-    //             wingman.style.top = wingman_topPos + 'px';
-    //             wingman.style.left = wingman_leftPos + 'px';
-    //         }
-    //     }    
+                wingman.style.top = wingman_topPos + 'px';
+                wingman.style.left = wingman_leftPos + 'px';
+            }
+        }    
 
-    // }, 8200);
+    }, 8200);
 
 
 }
