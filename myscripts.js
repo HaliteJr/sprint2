@@ -20,6 +20,10 @@ function ending() {
     }
 }
 
+function reload() {
+    window.location.reload();
+}
+
 
 function goingRedFirst(){
 	myleftMove(700);
@@ -129,14 +133,15 @@ var wingman = document.getElementById("baby_ship");
 
    setTimeout(function(){ 
     wingman.style.backgroundImage = "url('assets/wingman01-sheild.png')";
-    ending();
     }, 14500);
 
    setTimeout(function(){ 
     var confused = document.getElementById("confused"); 
     confused.style.display = "inline";
-    }, 16000);
+    }, 15000);
 
+    setTimeout(function(){
+        ending();}, 17000);
 
 }
 
